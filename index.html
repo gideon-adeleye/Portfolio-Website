@@ -1,331 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Gideon Adeleye — Product Designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <div class="cursor-orb"></div>
-     <header class="site-header">
-  <div class="container nav-container">
-    <!-- LEFT: Logo + Name -->
-    <a href="#hero" class="logo">
-      <span class="logo-mark">GA</span>
-      <span class="logo-text">Gideon Adeleye</span>
-    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gideon Adeleye — Product Designer Who Ships Code</title>
+    <meta name="description" content="Product designer with 3+ years experience who designs and builds digital products. I turn ideas into working prototypes using design + React/React Native.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
 
-    <!-- CENTER: Links -->
-    <nav class="main-nav" id="mainNav">
-      <a href="#hero">Home</a>
-      <a href="#value">My Value</a>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#hero" class="logo" aria-label="Gideon Adeleye — home">GA</a>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="https://cal.com/gideon-adeleye/30min" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </div>
     </nav>
 
-    <!-- RIGHT: CTA + Mobile Toggle -->
-    <div class="nav-actions">
-      <a href="#contact" class="btn nav-cta">Book a Call</a>
-
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </div>
-</header>
-<!--Hero Section-->
-<section class="section hero-section" id="top">
-  <div class="container">
-    <div class="hero-inner">
-      <span class="tag tag--accent tag--sm">Product Designer</span>
-
-      <h1 class="hero-heading">
-        Designing digital products that feel simple, modern, and easy to ship.
-      </h1>
-
-      <p class="hero-subtext">
-        I help early-stage founders turn rough ideas into clean, functional interfaces
-        that users actually understand. No drama — just clear layouts, sharp flows,
-        and designs your developers won’t complain about.
-      </p>
-
-      <div class="hero-cta-row">
-        <a href="#contact" class="btn primary-btn">Book a Call</a>
-        <a href="#work" class="btn ghost-btn">See My Work</a>
-      </div>
-
-      <div class="hero-meta-row">
-        <span class="hero-meta-pill">Web & Mobile Products</span>
-        <span class="hero-meta-pill">Early-Stage & MVP Focus</span>
-        <span class="hero-meta-pill">Dashboard Designs</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MY VALUE SECTION -->
-<section class="section value-section" id="value">
-  <div class="container">
-
-    <!-- Tag -->
-    <span class="tag tag--accent tag--sm value-tag">What I Bring</span>
-
-    <!-- Heading -->
-    <h2 class="value-heading">I keep things clear, fast, and intentional.</h2>
-
-    <!-- Subtext -->
-    <p class="value-subtext">
-      My approach is simple: build products that users understand instantly
-      while reducing friction for the teams shipping them.
-    </p>
-
-    <!-- VALUE GRID -->
-    <div class="value-grid">
-
-      <!-- VALUE 1 -->
-      <div class="value-card">
-        <h3 class="value-title">I design for real users.</h3>
-        <p class="value-desc">
-          Clean layouts, obvious decisions, and flows that reduce friction —
-          not just fancy UI. If it doesn't make someone’s job easier, it’s not done.
-        </p>
-      </div>
-
-      <!-- VALUE 2 -->
-      <div class="value-card">
-        <h3 class="value-title">I work well with founders.</h3>
-        <p class="value-desc">
-          You explain the idea however it comes, and I translate it into
-          something users can actually navigate — without losing your vision.
-        </p>
-      </div>
-
-      <!-- VALUE 3 -->
-      <div class="value-card">
-        <h3 class="value-title">I move fast without chaos.</h3>
-        <p class="value-desc">
-          Wireframes → feedback → clean UI → handoff. No overthinking.
-          No 2-month delays. Just intentional, fast iteration.
-        </p>
-      </div>
-
-      <!-- VALUE 4 -->
-      <div class="value-card">
-        <h3 class="value-title">I design things devs can build.</h3>
-        <p class="value-desc">
-          Components that plug in cleanly. Clear logic. Predictable spacing.
-          Developers don’t fight my designs — they ship them.
-        </p>
-      </div>
-
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+        <a href="#work"    class="mobile-link">Work</a>
+        <a href="#about"   class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="https://cal.com/gideon-adeleye/30min" target="_blank" rel="noopener" class="mobile-link mobile-cta">Book a Call</a>
     </div>
 
-    <!-- OPTIONAL CTA -->
-    <div class="value-cta-wrapper">
-      <a href="#work" class="btn ghost-btn value-cta">See What I’ve Worked On</a>
-    </div>
-
-  </div>
-</section>
-<!-- SELECTED WORK SECTION -->
-<section class="section work-section" id="work">
-  <div class="container">
-
-    <!-- Tag -->
-    <span class="tag tag--accent tag--sm work-tag">Selected Work</span>
-
-    <!-- Heading -->
-    <h2 class="work-heading">Stuff I’ve designed that I think you’ll like.</h2>
-
-    <!-- Subtext -->
-    <p class="work-subtext">
-      A mix of product work, concept explorations, and shipped interfaces across
-      mobile, web, SaaS, fintech, and dashboards.
-    </p>
-
-    <!-- WORK GRID -->
-    <div class="work-grid">
-
-      <!-- PROJECT 1 -->
-      <a class="work-card" href="#" target="_blank">
-        <div class="work-card-thumb thumb-resigo"></div>
-        <h3 class="work-card-title">ResiGo – Apartment Rental App</h3>
-        <p class="work-card-desc">A clean and modern way to rent apartments without agents.</p>
-        <div class="work-card-tags">
-          <span class="chip">Mobile App</span>
-          <span class="chip">Real Estate</span>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <p class="hero-eyebrow">Gideon Adeleye — Product Designer</p>
+            <h1 class="hero-title">I design digital<br>products that developers<br>love to build.</h1>
+            <p class="hero-description">
+                With 3+ years designing mobile apps and SaaS products, I bring technical awareness that bridges design and development. I understand how things get built — clearer specs, fewer surprises, smoother collaboration.
+            </p>
+            <div class="hero-cta">
+                <a href="#work" class="button-primary">View Work</a>
+                <a href="#contact" class="button-secondary">Book a Call</a>
+            </div>
         </div>
-      </a>
+    </section>
 
-      <!-- PROJECT 2 -->
-      <a class="work-card" href="#" target="_blank">
-        <div class="work-card-thumb thumb-velo"></div>
-        <h3 class="work-card-title">Velo – Rideshare Experience</h3>
-        <p class="work-card-desc">A sleek ride-hailing concept designed for simplicity.</p>
-        <div class="work-card-tags">
-          <span class="chip">Mobile App</span>
-          <span class="chip">Transport</span>
+    <!-- Stats -->
+    <div class="stats-strip" aria-label="Quick stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-value"><span class="counter" data-target="3">0</span>+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-item reveal" data-delay="80">
+                    <div class="stat-value"><span class="counter" data-target="12">0</span>+</div>
+                    <div class="stat-label">Projects Shipped</div>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-item reveal" data-delay="160">
+                    <div class="stat-value"><span class="counter" data-target="6">0</span>+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-item reveal" data-delay="240">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Dev-Friendly</div>
+                </div>
+            </div>
         </div>
-      </a>
+    </div>
 
-      <!-- PROJECT 3 -->
-      <a class="work-card" href="#" target="_blank">
-        <div class="work-card-thumb thumb-shop"></div>
-        <h3 class="work-card-title">ShopHaven – E-Commerce Website</h3>
-        <p class="work-card-desc">A modern shopping flow built for speed and clarity.</p>
-        <div class="work-card-tags">
-          <span class="chip">Web Design</span>
-          <span class="chip">E-Commerce</span>
+    <!-- Value Proposition -->
+    <section class="value">
+        <div class="container">
+            <p class="section-eyebrow reveal">01 — Value</p>
+            <h2 class="section-title reveal" data-delay="80">Why Work With Me</h2>
+            <p class="section-subtitle reveal" data-delay="160">I design with developers in mind — creating clear, feasible, and well-thought-out products.</p>
+
+            <div class="value-grid">
+                <div class="value-card reveal" data-delay="0">
+                    <span class="value-number">01</span>
+                    <h3>I Design with Technical Clarity</h3>
+                    <p>I understand HTML, CSS, and JavaScript fundamentals, which means I design features that are actually buildable. Developers appreciate clear specs, realistic scopes, and well-thought-out interactions.</p>
+                </div>
+                <div class="value-card reveal" data-delay="80">
+                    <span class="value-number">02</span>
+                    <h3>I Think Through Implementation</h3>
+                    <p>My technical awareness helps me anticipate edge cases and technical constraints early. This prevents costly redesigns during development and keeps projects on track.</p>
+                </div>
+                <div class="value-card reveal" data-delay="160">
+                    <span class="value-number">03</span>
+                    <h3>I Focus on Real Problems</h3>
+                    <p>Clean, simple, shippable designs. No over-designed features you can't afford to build. I understand startup constraints and design accordingly.</p>
+                </div>
+                <div class="value-card reveal" data-delay="240">
+                    <span class="value-number">04</span>
+                    <h3>I Have Proven Experience</h3>
+                    <p>3+ years designing mobile apps and SaaS products for startups. From apartment rentals to rideshare platforms to fintech dashboards — I've designed complete product experiences.</p>
+                </div>
+            </div>
         </div>
-      </a>
+    </section>
 
-      <!-- PROJECT 4 -->
-      <a class="work-card" href="#" target="_blank">
-        <div class="work-card-thumb thumb-finance"></div>
-        <h3 class="work-card-title">FinanceFlow – Fintech Dashboard</h3>
-        <p class="work-card-desc">A clean financial analytics dashboard for teams and users.</p>
-        <div class="work-card-tags">
-          <span class="chip">Dashboard</span>
-          <span class="chip">Fintech</span>
+    <!-- Work -->
+    <section id="work" class="work">
+        <div class="container">
+            <p class="section-eyebrow reveal">02 — Work</p>
+            <h2 class="section-title reveal" data-delay="80">Selected Work</h2>
+            <p class="section-subtitle reveal" data-delay="160">A mix of design projects and coded prototypes across mobile, web, and SaaS products.</p>
+
+            <div class="projects-grid">
+
+                <a href="projects/resigo.html" class="project-card reveal" data-delay="0">
+                    <div class="project-image">
+                        <img src="images/Resigo.jpg" alt="ResiGo App Preview" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-img-fallback" style="display:none">ResiGo</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span class="project-tag">Mobile App</span>
+                                <span class="project-tag">Real Estate</span>
+                            </div>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">ResiGo – Apartment Rental App</h3>
+                        <p class="project-description">A clean and modern way to rent apartments without agents. Designed end-to-end rental flow focused on simplicity.</p>
+                    </div>
+                </a>
+
+                <a href="projects/velo.html" class="project-card reveal" data-delay="80">
+                    <div class="project-image">
+                        <img src="images/Velo.jpg" alt="Velo App Preview" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-img-fallback" style="display:none">Velo</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span class="project-tag">Mobile App</span>
+                                <span class="project-tag">Transport</span>
+                            </div>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Velo – Rideshare Experience</h3>
+                        <p class="project-description">A sleek ride-hailing concept designed for simplicity and speed. Focused on reducing booking friction.</p>
+                    </div>
+                </a>
+
+                <a href="projects/shophaven.html" class="project-card reveal" data-delay="0">
+                    <div class="project-image">
+                        <img src="images/shophaven-preview.jpg" alt="ShopHaven Preview" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-img-fallback" style="display:none">ShopHaven</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span class="project-tag">Web Design</span>
+                                <span class="project-tag">E-Commerce</span>
+                            </div>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">ShopHaven – E-Commerce Website</h3>
+                        <p class="project-description">A modern shopping flow built for speed and clarity. Clean product pages and streamlined checkout.</p>
+                    </div>
+                </a>
+
+                <a href="projects/financeflow.html" class="project-card reveal" data-delay="80">
+                    <div class="project-image">
+                        <img src="images/financeflow-preview.jpg" alt="FinanceFlow Dashboard" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-img-fallback" style="display:none">FinanceFlow</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span class="project-tag">Dashboard</span>
+                                <span class="project-tag">Fintech</span>
+                            </div>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">FinanceFlow – Fintech Dashboard</h3>
+                        <p class="project-description">A clean financial analytics dashboard for teams. Data visualization focused on clarity and quick insights.</p>
+                    </div>
+                </a>
+
+                <a href="projects/parcelq.html" class="project-card reveal" data-delay="0">
+                    <div class="project-image">
+                        <img src="images/parcelq-preview.jpg" alt="ParcelQ Admin Panel" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-img-fallback" style="display:none">ParcelQ</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span class="project-tag">Dashboard</span>
+                                <span class="project-tag">Logistics</span>
+                            </div>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">ParcelQ – Delivery Admin Panel</h3>
+                        <p class="project-description">An admin dashboard for tracking parcels and managing delivery operations. Built for efficiency.</p>
+                    </div>
+                </a>
+
+                <a href="projects/primeai.html" class="project-card reveal" data-delay="80">
+                    <div class="project-image">
+                        <img src="images/primeai-preview.jpg" alt="Prime AI Website" loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="project-img-fallback" style="display:none">Prime AI</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span class="project-tag">Web Design</span>
+                                <span class="project-tag">AI</span>
+                            </div>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Prime AI – Website Design</h3>
+                        <p class="project-description">A clean and bold landing page for an AI learning platform. Modern aesthetic with clear messaging.</p>
+                    </div>
+                </a>
+
+            </div>
         </div>
-      </a>
+    </section>
 
-      <!-- PROJECT 5 -->
-      <a class="work-card" href="#" target="_blank">
-        <div class="work-card-thumb thumb-parcel"></div>
-        <h3 class="work-card-title">ParcelQ – Delivery Admin Panel</h3>
-        <p class="work-card-desc">An admin dashboard for tracking parcels and managing orders.</p>
-        <div class="work-card-tags">
-          <span class="chip">Dashboard</span>
-          <span class="chip">Logistics</span>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p class="section-eyebrow">03 — About</p>
+                    <h2 class="section-title about-title">About Me</h2>
+                    <p>I'm Gideon Adeleye, a product designer based in Lagos, Nigeria. I help early-stage startups design digital products that feel clean, modern, and are built to last.</p>
+                    <p>What makes me effective: I understand how things get built. With knowledge of HTML, CSS, and JavaScript fundamentals, I design with technical feasibility in mind. This means fewer "can we actually build this?" conversations and smoother collaboration with engineering teams.</p>
+                    <p>Over the past 3+ years, I've designed mobile apps, SaaS dashboards, and e-commerce experiences across fintech, real estate, logistics, and more. I specialize in taking complex problems and turning them into simple, intuitive interfaces.</p>
+                    <p>I thrive working with small teams and startups where design needs to move fast, make sense to developers, and solve real user problems.</p>
+                    <div class="about-skills">
+                        <div class="skill-category">
+                            <h4>Design</h4>
+                            <p>Figma, Wireframing, Prototyping, Design Systems, User Flows, User Research, Interface Design</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Technical Awareness</h4>
+                            <p>HTML, CSS, JavaScript Fundamentals, Developer Collaboration, Technical Specifications</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Focus Areas</h4>
+                            <p>Mobile Apps, SaaS Dashboards, E-Commerce, MVP Development, Startup Products</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image reveal" data-delay="150">
+                    <img src="images/gideon-photo.jpg" alt="Gideon Adeleye"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="about-img-fallback" aria-hidden="true" style="display:none">GA</div>
+                </div>
+            </div>
         </div>
-      </a>
+    </section>
 
-      <!-- PROJECT 6 -->
-      <a class="work-card" href="#" target="_blank">
-        <div class="work-card-thumb thumb-prime"></div>
-        <h3 class="work-card-title">Prime AI – Website Design</h3>
-        <p class="work-card-desc">A clean and bold landing page for an AI learning platform.</p>
-        <div class="work-card-tags">
-          <span class="chip">Web Design</span>
-          <span class="chip">AI</span>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <p class="section-eyebrow reveal">04 — Contact</p>
+                <h2 class="contact-heading reveal" data-delay="80">Let's Work Together</h2>
+                <p class="contact-description reveal" data-delay="160">
+                    Have an MVP to build? A product that needs both design and code?<br>
+                    Let's talk about turning your idea into something shippable.
+                </p>
+                <div class="contact-actions reveal" data-delay="240">
+                    <a href="https://cal.com/gideon-adeleye/30min" target="_blank" rel="noopener"
+                       class="button-primary" id="calendar-link">Book a Call</a>
+                    <a href="mailto:gideonadeleye9@gmail.com" class="contact-email">gideonadeleye9@gmail.com</a>
+                </div>
+                <div class="contact-social reveal" data-delay="320">
+                    <a href="https://www.linkedin.com/in/gideon-adeleye" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/gideon-adeleye" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <p class="contact-note reveal" data-delay="400">
+                    Prefer async? Email me with context about your project and I'll reply with next steps.
+                </p>
+            </div>
         </div>
-      </a>
+    </section>
 
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <p class="footer-name">Gideon Adeleye</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/gideon-adeleye" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/gideon-adeleye" target="_blank" rel="noopener">GitHub</a>
+                    <a href="mailto:gideonadeleye9@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2025 Gideon Adeleye. All rights reserved.</p>
+                <p class="footer-tagline">Product Designer — Lagos, Nigeria</p>
+            </div>
+        </div>
+    </footer>
 
-    <!-- View More -->
-    <div class="work-cta-wrapper">
-      <a href="#" class="btn ghost-btn work-cta">View All Projects</a>
-    </div>
-
-  </div>
-</section>
-<!-- ABOUT ME SECTION -->
-<section id="about" class="section about-section">
-  <div class="container about-layout">
-    <!-- LEFT: COPY -->
-    <div class="about-left">
-      <span class="tag">About Me</span>
-
-      <h2 class="about-heading">A little about me.</h2>
-
-      <p class="about-text">
-        I’m Gideon Adeleye, a product designer based in Nigeria, focused on helping early-stage
-        founders and small teams build digital products that feel clean, modern, and easy to use.
-      </p>
-
-      <p class="about-text">
-        I care a lot about clarity—reducing noise in layouts, making flows obvious, and designing
-        interfaces that users don’t have to “figure out.” I like taking rough ideas, messy notes,
-        or half-baked concepts and turning them into simple, structured screens.
-      </p>
-
-      <p class="about-text">
-        My work is backed by a solid understanding of HTML and CSS, so I think in terms of what’s
-        actually buildable. I enjoy collaborating with developers, product teams, and founders to
-        move from “idea” to “shippable” without overcomplicating the process.
-      </p>
-
-      <div class="about-meta-row">
-        <span class="chip">2+ years · Web & mobile</span>
-        <span class="chip">Startup-focused</span>
-        <span class="chip">Figma · systems · prototypes</span>
-      </div>
-
-      <div class="about-cta-wrapper">
-        <a href="#contact" class="btn primary-btn">Book a call</a>
-      </div>
-    </div>
-
-    <!-- RIGHT: PHOTO -->
-    <div class="about-right">
-      <div class="about-photo-frame">
-        <img
-          src="images/Portfolio image 5.JPG"
-          alt="Gideon working on a product design"
-          class="about-photo"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-<!-- BOOK A CALL / CONTACT SECTION -->
-<section id="contact" class="section contact-section">
-  <div class="container">
-    <div class="contact-inner">
-      <span class="tag tag--accent tag--sm contact-tag">Let’s talk</span>
-
-      <h2 class="contact-heading">
-        Have an idea? Let’s build the version users will actually use.
-      </h2>
-
-      <p class="contact-subtext">
-        Whether you’re validating an MVP, redesigning something that isn’t working,
-        or starting from scratch — I’d like to help shape it into something clear,
-        modern, and easy to ship.
-      </p>
-
-      <div class="contact-cta-row">
-        <!-- replace the email with your real one -->
-        <a href="mailto:youremail@example.com" class="btn primary-btn contact-btn">
-          Schedule a Call
-        </a>
-
-        <p class="contact-note">
-          Prefer async? You can also reach out with context and links, and I’ll reply with
-          next steps.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-main">
-      <p class="footer-name">Gideon Adeleye</p>
-      <p class="footer-role">Product Designer — Web &amp; Mobile</p>
-      <p class="footer-tagline">
-        Helping founders turn messy ideas into clean, functional products.
-      </p>
-    </div>
-
-    <div class="footer-meta">
-      <div class="footer-links">
-        <!-- Replace with your actual links -->
-        <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://www.behance.net/your-handle" target="_blank" rel="noreferrer">Behance</a>
-        <a href="mailto:youremail@example.com">Email</a>
-      </div>
-
-      <p class="footer-copy">© 2026 — Designed by Gideon</p>
-    </div>
-  </div>
-</footer>
-    <script src="js/script.js"></script>
-  </body>
+    <script src="./js/script.js"></script>
+</body>
 </html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResiGo - Apartment Rental App | Gideon Adeleye</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="case-study.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="../index.html" class="logo" aria-label="Gideon Adeleye — home">GA</a>
+            <div class="nav-links">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#contact">Contact</a>
+                <a href="https://cal.com/gideon-adeleye/30min" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+        <a href="../index.html#work"    class="mobile-link">Work</a>
+        <a href="../index.html#about"   class="mobile-link">About</a>
+        <a href="../index.html#contact" class="mobile-link">Contact</a>
+        <a href="https://cal.com/gideon-adeleye/30min" target="_blank" rel="noopener" class="mobile-link mobile-cta">Book a Call</a>
+    </div>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="container">
+            <div class="case-tags">
+                <span class="case-tag">Mobile App</span>
+                <span class="case-tag">Real Estate</span>
+                <span class="case-tag">Fintech</span>
+                <span class="case-tag">2024</span>
+            </div>
+            <h1 class="case-title">ResiGo – Find Homes Without Agent Fees</h1>
+            <p class="case-subtitle">Connect directly with landlords. Pay securely & move in faster. Eliminating agent fees and creating a transparent rental experience for Nigerians.</p>
+            
+            <div class="case-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Product Designer (End-to-end)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">3-4 weeks</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Tools</span>
+                    <span class="meta-value">Figma, Prototyping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Image -->
+    <section class="case-featured">
+        <div class="container">
+            <div class="featured-image">
+                <!-- ADD YOUR MAIN PROJECT IMAGE HERE -->
+                <img src="../images/resigo-main.jpg" alt="ResiGo App Screens" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%); this.style.minHeight='500px'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="case-section">
+        <div class="container case-container">
+            <div class="case-content">
+                <h2>The Problem</h2>
+                <p>Finding apartments in Nigeria is expensive and frustrating. Most renters rely on agents who charge high commission fees (usually 10% of annual rent), show limited options, and create unnecessary friction in the rental process.</p>
+                
+                <p>On top of agent fees, renters deal with hidden charges that appear last-minute, no direct contact with landlords, unclear pricing breakdowns (rent vs. caution fee vs. agent commission), trust issues where photos don't match reality, scams are common, and scheduling viewings takes days through agent middlemen.</p>
+                
+                <p class="highlight">The core insight: Renters don't need agents—they need transparency and direct access to landlords.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research / Discovery -->
+    <section class="case-section bg-light">
+        <div class="container case-container">
+            <div class="case-content">
+                <h2>Research & Discovery</h2>
+                <p>I talked to people who recently rented apartments in Lagos to understand their pain points and needs:</p>
+                
+                <ul class="insights-list">
+                    <li><strong>Agent dependency:</strong> 85% wanted to avoid agent fees but didn't know how to find apartments directly from landlords</li>
+                    <li><strong>Trust was the #1 concern:</strong> Scams are common, photos don't match reality, and people are skeptical of online listings</li>
+                    <li><strong>Pricing transparency:</strong> People wanted to see exact prices upfront before contacting anyone—no "call for pricing" games</li>
+                    <li><strong>Scheduling friction:</strong> Coordinating viewings through agents took 3-5 days on average when it should take hours</li>
+                </ul>
+
+                <p>This research shaped the core features: direct landlord connection, verified badge system, transparent pricing breakdowns, and in-app booking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="case-section">
+        <div class="container case-container">
+            <div class="case-content">
+                <h2>The Solution</h2>
+                <p>ResiGo is a mobile-first platform that connects renters directly with verified landlords, eliminating agent fees and creating a transparent rental experience. The tagline "Rent Smarter, Pay Fair" reflects the core promise.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🏠 Direct Landlord Connection</h3>
+                        <p>Chat directly with property owners in-app. Ask questions, negotiate terms, and schedule viewings without middlemen. Every landlord is verified with a badge system to build trust.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💰 Transparent Pricing</h3>
+                        <p>No hidden fees. Every listing shows the exact breakdown: Rent + Caution Fee = Total. Users see ₦650,000/year + ₦50,000 caution = ₦700,000 total upfront. No surprises.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔍 Smart Discovery</h3>
+                        <p>Browse by categories (Apartments, Houses, Shortlets, Shared, Furnished) with multiple filters: Verified landlords only, Newest listings, Recommended, User-rated properties.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📅 Integrated Booking</h3>
+                        <p>Schedule viewings directly through the app. Book apartments and pay securely—all in one place. Get instant confirmation with "You won't be charged yet" reassurance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>✅ Trust & Safety</h3>
+                        <p>Verified landlord badges, rating system (4.0 stars with review counts), secure payment processing, rental history tracking, and smart move-out reminders.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🎁 First-Renter Discount</h3>
+                        <p>"₦5,000 Off Your First Rent" promotion reduces barrier to entry and encourages users to complete their first transaction on the platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="case-section bg-light">
+        <div class="container case-container">
+            <div class="case-content">
+                <h2>Design Process</h2>
+                
+                <div class="process-step">
+                    <h3>1. User Flow Mapping</h3>
+                    <p>I mapped the core user journey: Browse → View Details → Chat with Landlord → Schedule Viewing → Book → Pay. Key insight: Users need to trust the landlord BEFORE they chat, which led to the verification badge system and upfront pricing on every card. This flow needed to feel natural and low-pressure, so each step reinforces trust.</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>2. Visual Design & Prototyping</h3>
+                    <p>I designed a clean, trustworthy interface with a calming blue/purple color palette (trust + professionalism), card-based listings with clear information hierarchy, large tappable areas for mobile-first experience, prominent verification badges, and promotional hooks ("₦5,000 Off Your First Rent") to drive adoption. Created interactive prototypes to test the booking flow and chat experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Screens -->
+    <section class="case-section">
+        <div class="container case-container">
+            <div class="case-content">
+                <h2>Key Screens</h2>
+                
+                <!-- Screen 1 -->
+                <div class="screen-showcase">
+                    <div class="screen-image">
+                        <img src="../images/resigo-home.png" alt="Home Screen" onerror="this.style.background='#f1f5f9'; this.style.minHeight='600px'">
+                    </div>
+                    <div class="screen-description">
+                        <h3>Home & Discovery</h3>
+                        <p>The home screen features a prominent "₦5,000 Off Your First Rent!" promotional banner at the top to encourage first-time users. Below that, category filters (Apartments, Houses, Shortlets, Shared, Furnished) allow quick navigation. The "Trending Nearby" section displays property cards with photos, ratings (4.0 stars), location (Sangotedo, Agungi), verification badges, and prices clearly visible. Each card is scannable and tappable, optimized for mobile browsing.</p>
+                    </div>
+                </div>
+
+                <!-- Screen 2 -->
+                <div class="screen-showcase reverse">
+                    <div class="screen-image">
+                        <img src="../images/resigo-details.png" alt="Listing Details" onerror="this.style.background='#f1f5f9'; this.style.minHeight='600px'">
+                    </div>
+                    <div class="screen-description">
+                        <h3>Listing Details</h3>
+                        <p>The listing detail page leads with high-quality property photos in a carousel. Below, the property name "2 Bedroom Apartment" and location "Sangotedo, Lagos" are clearly labeled with a verification badge. The price (₦2,500,000/Year) is prominently displayed with a note about monthly installments. A clear "Book Apartment" CTA button sits above the Features section (2 Bedrooms, Parking Space, Bathroom, Furnished, WiFi Cable, 24/7 Power, Gated Estate, Swimming Pool) and detailed Description. The message "No agent fees or hidden charges" reinforces transparency.</p>
+                    </div>
+                </div>
+
+                <!-- Screen 3 -->
+                <div class="screen-showcase">
+                    <div class="screen-image">
+                        <img src="../images/resigo-chat.png" alt="Chats Interface" onerror="this.style.background='#f1f5f9'; this.style.minHeight='600px'">
+                    </div>
+                    <div class="screen-description">
+                        <h3>Chat Interface</h3>
+                        <p>The Chats screen shows all conversations with landlords in one organized view. Search functionality at the top lets users quickly find specific conversations. Filter tabs (All, Unread, Archived) help manage messages. Each conversation displays the landlord's profile photo, name (e.g., Adewale Folorunsho, Tunde Afolabi), message preview, and timestamp. Unread message indicators (purple dots) ensure users don't miss important updates. The bottom navigation makes it easy to switch between Home, Chats, Listings, and Profile.</p>
+                    </div>
+                </div>
+
+                <!-- Screen 4: Booking Summary -->
+                <div class="screen-showcase reverse">
+                    <div class="screen-image">
+                        <img src="../images/resigo-checkout.png" alt="Booking Summary" onerror="this.style.background='#f1f5f9'; this.style.minHeight='600px'">
+                    </div>
+                    <div class="screen-description">
+                        <h3>Booking Summary</h3>
+                        <p>The Booking Summary screen provides complete transparency before payment. It displays the property image, name "2-Bedroom Apartment, Sangotedo", verification badge, and price (₦650,000/Year). Booking Details show Preferred Move-in Date (25 October 2025) and Duration (1 Year). Payment Details break down costs clearly: Rent (₦650,000), Caution Fee (₦50,000), and Total (₦700,000). Users can add an optional note to the landlord. The prominent "Confirm Booking" button includes reassurance: "You won't be charged yet." This design decision reduces commitment anxiety by making it clear booking and payment are separate steps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Decisions -->
+    <section class="case-section bg-light">
+        <div class="container case-container">
+            <div class="case-content">
+                <h2>Key Design Decisions</h2>
+                
+                <div class="decision-card">
+                    <h3>Verification Badge System</h3>
+                    <p>Trust is everything in Nigerian real estate. Scams are common, and people are skeptical of online listings. The verification badge appears on every listing card, detail page, and chat screen to constantly reinforce legitimacy. Users can filter to "Verified only" for maximum security.</p>
+                </div>
+
+                <div class="decision-card">
+                    <h3>Transparent Pricing Upfront</h3>
+                    <p>Hidden fees are the #1 complaint about agents. Showing Rent + Caution Fee = Total on every listing card means users can browse by price without surprises. No "contact for pricing" games. Users know exactly what they'll pay before chatting: ₦650,000 rent + ₦50,000 caution = ₦700,000 total.</p>
+                </div>
+
+                <div class="decision-card">
+                    <h3>Chat-First Over Call-First</h3>
+                    <p>Phone calls are high-pressure and leave no record. Chat creates a written trail of promises, gives renters time to think, and allows landlords to respond on their schedule. Reduces pressure, increases transparency, and creates accountability for both parties.</p>
+                </div>
+
+                <div class="decision-card">
+                    <h3>Category + Filter System</h3>
+                    <p>Different users have different needs—some want shortlets, others want shared apartments, some only trust verified landlords. Multiple filter options (All, Verified, Newest, Recommended, User Choice) let users narrow down quickly, reducing browsing time from "scroll through everything" to "see only what matches my criteria."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learnings / Takeaways -->
+    <section class="case-section">
+        <div class="container case-container">
+            <div class="case-content">
+                <h2>What I Learned</h2>
+                
+                <div class="learning-card">
+                    <h3>Trust is a Design Problem</h3>
+                    <p>In markets with low trust (like Nigerian real estate), design isn't just aesthetics—it's trust-building. Verification badges, transparent pricing, and ratings aren't "nice to have" features. They're core to whether users engage at all. Every design decision had to answer: "Does this build trust?"</p>
+                </div>
+
+                <div class="learning-card">
+                    <h3>Transparency Beats Features</h3>
+                    <p>Initially, I considered adding features like 360° tours, AR room visualization, and mortgage calculators. User testing showed people just wanted honest pricing and direct landlord contact. Sometimes the best feature is removing friction, not adding capabilities.</p>
+                </div>
+
+                <div class="learning-card">
+                    <h3>Context Matters More Than Best Practices</h3>
+                    <p>Features that work in Western rental apps (like instant booking without viewings) don't work in Nigeria where people want to physically see properties first. Had to adapt flows to local expectations—chat before booking, viewing before payment, caution fees as standard practice.</p>
+                </div>
+
+                <div class="learning-card">
+                    <h3>Two-Sided Marketplace Design is Balancing Act</h3>
+                    <p>Designing for renters AND landlords means balancing competing needs. Renters want low prices and transparency. Landlords want serious inquiries and fast decisions. The chat system, booking flow, and notification strategy had to serve both without favoring either.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps / Future Work -->
+    <section class="case-section bg-light">
+        <div class="container case-container">
+            <div class="case-content">
+                <h2>Next Steps</h2>
+                <p>If I were to develop this further, I'd focus on:</p>
+                
+                <ul class="next-steps-list">
+                    <li><strong>Virtual tours:</strong> 360° photos or video walkthroughs to reduce unnecessary viewings while maintaining trust</li>
+                    <li><strong>Payment plans:</strong> Installment options for rent (the design already hints at "₦65,000/month installments")</li>
+                    <li><strong>Landlord dashboard:</strong> Tools for landlords to manage listings, respond to inquiries, and track viewings efficiently</li>
+                    <li><strong>Reviews & ratings expansion:</strong> Let renters review landlords AND properties to build reputation system</li>
+                    <li><strong>Tenant verification:</strong> Background checks to give landlords confidence in accepting bookings</li>
+                    <li><strong>Saved searches with alerts:</strong> Notify users when new listings match their criteria (location, price, features)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects -->
+    <section class="case-section">
+        <div class="container">
+            <h2 class="text-center">More Projects</h2>
+            <div class="more-projects">
+                <a href="velo.html" class="project-preview">
+                    <div class="project-preview-image">
+                        <img src="../images/velo-preview.jpg" alt="Velo" onerror="this.style.background='linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'">
+                    </div>
+                    <h3>Velo – Rideshare App</h3>
+                    <p>Mobile App • Transport</p>
+                </a>
+                
+                <a href="shophaven.html" class="project-preview">
+                    <div class="project-preview-image">
+                        <img src="../images/shophaven-preview.jpg" alt="ShopHaven" onerror="this.style.background='linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'">
+                    </div>
+                    <h3>ShopHaven – E-Commerce</h3>
+                    <p>Web Design • E-Commerce</p>
+                </a>
+                
+                <a href="../index.html#work" class="project-preview view-all">
+                    <div class="view-all-content">
+                        <span>View All Projects →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="case-cta">
+        <div class="container">
+            <h2>Like what you see?</h2>
+            <p>Let's talk about your project.</p>
+            <a href="../index.html#contact" class="button-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Gideon Adeleye</h3>
+                    <p>Product Designer + Frontend Developer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/gideon-adeleye" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/gideon-adeleye" target="_blank">GitHub</a>
+                    <a href="mailto:gideonadeleye9@gmail.com">Email</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gideon Adeleye. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
